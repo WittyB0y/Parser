@@ -110,4 +110,4 @@ def work_hour(data_site: lxml) -> list:
     return str1 + str2
 
 
-print(get_info_from_site('https://oriencoop.cl/sucursales.htm'))
+get_info_from_site('https://oriencoop.cl/sucursales.htm')
