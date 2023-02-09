@@ -1,7 +1,3 @@
-from re import U
-from tkinter import E
-import requests
-from bs4 import BeautifulSoup as BS
 import lxml
 import json
 import fake_useragent
@@ -33,7 +29,7 @@ def data_from_shops(link: str):  # data from sites to dict
         a = requester('https://naturasiberica.ru' + x)
         work = 'пн-вс ' + a.find_all('div', 'original-shops__schedule')[0].text
         phone = a.find_all(
-            'p', 'original-shops__phone')[0].text + '74992719642'  # возникли сложности с получением номера телефона, приходит пустой тег
+            'p', 'original-shops__phone')[0].text
         for add in address:
             data.append(
                 {
