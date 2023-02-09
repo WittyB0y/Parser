@@ -100,4 +100,4 @@ def writer(data: list):
     return 'Data has been added to data2.json'
 
 
-print(data_from_shop('https://som1.ru/shops'))
+data_from_shop('https://som1.ru/shops')
